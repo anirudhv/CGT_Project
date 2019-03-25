@@ -7,6 +7,7 @@ body {
   margin: 0
 }
 
+
 .introduction {
   margin: 20px;
 }
@@ -249,8 +250,8 @@ img {
   width: auto;
   padding: 16px;
   margin-top: -30px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 30%;
+  margin-right: 30%;
   color: red;
   font-weight: bold;
   font-size: 18px;
@@ -325,6 +326,7 @@ img {
   .main-container {
     width: 100%;
     position: center;
+    left: 0;
   }
 
 
@@ -381,7 +383,8 @@ img {
 @media screen and (min-width: 800px) and (max-width: 1500px){
   .main-container {
     width: 100%;
-    position: center;
+    position: absolute;
+    left: 20%;
   }
 
 
