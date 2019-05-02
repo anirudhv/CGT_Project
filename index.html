@@ -1,101 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body>
-	<title>Purdue Apps</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="icon" href="images/home.png">
+  <title>Home</title>
 </head>
 <body>
 
-<ul class="topnav">
-	<li><a href="index.html">Home</a></li>
-	<div class="dropdown">
-		<button class="dropbtn">Apps</button>
-	 		<div class="dropdown-content">
-				<a href="duomobile.html">Duo Mobile</a>
-				<a href="blackboard.html">Blackboard</a>
-				<a href="outlook.html">Outlook</a>
-				<a href="purduedining.html">Purdue Mobile Menus</a>
-				<a href="groupme.html">GroupMe</a>
-				<a href="citybus.html">CityBus</a>
-	 		</div>
- 	</div>
-	<li><a href="contact.html">Contact</a></li>
-</ul>
-
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Apps
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="BlackBoard.html">Blackboard</a>
+          <a class="dropdown-item" href="citybus.html">Citybus</a>
+          <a class="dropdown-item" href="duomobile.html">DuoMobile</a>
+          <a class="dropdown-item" href="GroupMe.html">GroupMe</a>
+          <a class="dropdown-item" href="outlook.html">Outlook</a>
+          <a class="dropdown-item" href="PurdueDining.html">Purdue Dining</a>
+        </div>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 <div class="main-container"> <!-- main container -->
-	<div class="header"> <!-- header -->
-		<h1><strong>5 Apps that a Purdue student must have</strong></h1>
-	</div> <!-- header -->
 
 	<div class="introduction"> <!-- introduction -->
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-			eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-			 ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-			 aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-			  in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-				sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-				 mollit anim id est laborum.
-		</p>
-
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-			eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-			ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-			aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-			in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-			 sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-			 mollit anim id est laborum.
-		 </p>
+		<br><br><br><br><br>
+    <div class="alert alert-primary" id = "al" style= "margin:auto" role="alert">
+        <div class = "marquee">
+    <span>New apps have been released in the catalog! Check them out now!</span></div></div>
+  
+</div>
+<div class = "vid"><iframe src="https://youtube.com/embed/EkCV6d4YqxI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 	</div> <!-- introduction -->
 
-	<div class="slideshow-container"> <!-- slideshow container -->
+<footer> 
+	© 2019, Anirudh Venkataramanan and Robin Kim
+</footer>
 
-		<div class="mySlides">
-		  <img src="images/blackboardimg.png" style="width:50%">
-		  <div class="text">BlackBoard</div>
-		</div>
-
-		<div class="mySlides">
-		  <img src="images/groupmeimg.png" style="width:50%">
-		  <div class="text">GroupMe</div>
-		</div>
-
-		<div class="mySlides">
-		  <img src="images/outlookimg.jpg" style="width:50%">
-		  <div class="text">Outlook</div>
-		</div>
-
-		<div class="mySlides">
-		  <img src="images/diningimg.jpg" style="width:50%">
-		  <div class="text">Purdue Mobile Menus</div>
-		</div>
-
-		<div class="mySlides">
-		  <img src="images/duoimg.jpg" style="width:50%">
-		  <div class="text">Duo Mobile</div>
-		</div>
-
-		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-		</div> <!-- slideshow container -->
-		<br>
-
-		<div style="text-align:center">
-		  <span class="dot" onclick="currentSlide(1)"></span>
-		  <span class="dot" onclick="currentSlide(2)"></span>
-		  <span class="dot" onclick="currentSlide(3)"></span>
-			<span class="dot" onclick="currentSlide(4)"></span>
-			<span class="dot" onclick="currentSlide(5)"></span>
-		</div>
-
-		<script src="js/slideshow.js"></script>
-
-</div> <!-- main container -->
 
 </body>
 </html>

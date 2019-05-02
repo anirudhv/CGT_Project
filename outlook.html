@@ -1,59 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>Purdue Apps</title>
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="icon" href="images/outlookimg.jpg">
+	<title>Outlook</title>
 </head>
 <body>
 
-<ul class="topnav">
-	<li><a href="index.html">Home</a></li>
-	<div class="dropdown">
-		<button class="dropbtn">Apps</button>
-	 		<div class="dropdown-content">
-				<a href="duomobile.html">Duo Mobile</a>
-				<a href="blackboard.html">Blackboard</a>
-				<a href="outlook.html">Outlook</a>
-				<a href="purduedining.html">Purdue Mobile Menus</a>
-				<a href="groupme.html">GroupMe</a>
-				<a href="citybus.html">CityBus</a>
-	 		</div>
- 	</div>
-	<li><a href="contact.html">Contact</a></li>
-</ul>
-
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Outlook</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Apps
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="BlackBoard.html">Blackboard</a>
+          <a class="dropdown-item" href="citybus.html">Citybus</a>
+          <a class="dropdown-item" href="duomobile.html">DuoMobile</a>
+          <a class="dropdown-item" href="GroupMe.html">GroupMe</a>
+          <a class="dropdown-item" href="#">Outlook<span class="sr-only">(current)</span></a>
+          <a class="dropdown-item" href="PurdueDining.html">Purdue Dining</a>
+        </div>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 <div class="main-container"> <!-- main container -->
+	<!-- Button trigger modal -->
+	
 
-	<div id="left-container"> <!-- left container -->
-		<div id="star-review"> <!-- star review -->
-				<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-		</div> <!-- star review -->
+	<a class="btn btn-light"  target = "_blank" href="https://itunes.apple.com/us/app/microsoft-outlook/id951937596?mt=8">Download on iOS</a>
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+  About Outlook
+</button> <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">App Ratings</button>
+<a class="btn btn-success"  target = "_blank" href="https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en_US" role="button">Download on Android</a>
 
-		<div class="image-container"> <!-- image container -->
-		  <img src="images/outlookimg.jpg" class="w3-round-xxlarge" alt="Microsoft Outlook App" style="width:60%">
-		</div> <!-- image container -->
+<!-- Large modal -->
 
-		<div class="app-text"> <!-- app text -->
-			<h3>Outlook</h3>
-		</div> <!-- app text -->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
 
-		<div class="app-description"> <!-- app description -->
-			<h4>
+
+<h3>Outlook App Ratings</h3><!-- Start BawkBox Code--><script data-sil-id="5cc12621becce4001be1eade">let loadWidget = function() { var d = document, w = window, l = window.location,p = l.protocol == "file:" ? "http://" : "//"; if (!w.WS) w.WS = {}; c = w.WS; var m=function(t, o){ var e = d.getElementsByTagName("script"); e=e[e.length-1]; var n = d.createElement(t); if (t=="script") {n.async=true;} for (k in o) n[k] = o[k]; e.parentNode.insertBefore(n, e)}; m("script", { src: p + "bawkbox.com/widget/star-rating/5cc12621becce4001be1eade?page=" +encodeURIComponent(l+''), type: 'text/javascript' }); c.load_net = m; }; if(window.Squarespace){ document.addEventListener('DOMContentLoaded', loadWidget); } else { loadWidget() } </script><script type="application/ld+json" src="/widget/star-rating/5cc12621becce4001be1eade/microdata"></script><div class="sil-widget-star-rating sil-widget" id="sil-widget-5cc12621becce4001be1eade"><a href="//bawkbox.com/install/star-rating">Customer Reviews</a></div><!-- End BawkBox Code-->
+
+    </div>
+    <div class = "modal-content">
+    	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">App Description - Duo Mobile</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+			<p>
 				Outlook lets you bring all your email accounts and calendars in one convenient spot. Whether it's staying
 				on top of your inbox or scheduling the next big thing, we make it easy to be your most productive, organized,
 				 and connected self.
-			</h4>
+			</p>
 
-			<h4>
-				Here's what you'll love about Outlook for iOS:
-			</h4>
+			<p>
+				Here's what you'll love about Outlook:
+			</p>
 
 			<ul>
 				<li>Focus on the right things with our smart inbox - we help you sort between messages you need to act on straight away and everything else</li>
@@ -62,37 +99,56 @@
 				<li>Find everything you're looking for with our new search experience, including files, contacts, and your upcoming trips</li>
 				<li>Maps</li>
 			</ul>
-		</div> <!-- app description -->
+      </div>
+      <div class="modal-footer">
+                <p><i>"With the Outlook app, I never miss out on important messages from my advisor, professors, club leaders, and employers!"</i> - Joanna Reid (Purdue Class of 2020)</p>
+      </div>
+    </div>
+  </div>
+</div>
+		<br>
 
-	</div> <!-- left container -->
+		<div class="slideshow-container"> <!-- slideshow container -->
+		<div class="mySlides">
+		  <img src="images/outlookimg.jpg" style="height:200px" alt = "outlook logo">
+		</div>
 
-	<div id="review-container"> <!-- review container -->
-		<div class="text-box"> <!-- text box-->
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-				Voluptatum quos tempore quis dolorum alias ea! Perferendis 
-				accusantium repellendus omnis. Ea ad non quia in quo sit
-				consequatur, unde eveniet id.
-			</p>
-		</div> <!-- text box-->
+		<div class="mySlides">
+		  <img src="images/o1.png" style="height:225px" alt = "outlook 1">
+		</div>
 
-		<div class="text-box"> <!-- text box-->
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-				Voluptatum quos tempore quis dolorum alias ea! Perferendis 
-				accusantium repellendus omnis. Ea ad non quia in quo sit
-			    consequatur, unde eveniet id.
-			</p>
-		</div> <!-- text box-->
+		<div class="mySlides">
+		  <img src="images/o2.png" style="height:400px" alt = "outlook 2">
+		</div>
+			<div class="mySlides">
+		  <img src="images/o4.png" style="height:400px" alt = "outlook 3">
+		</div>
 
-		<div class="text-box"> <!-- text box-->
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-				Voluptatum quos tempore quis dolorum alias ea! Perferendis 
-				accusantium repellendus omnis. Ea ad non quia in quo sit
-				consequatur, unde eveniet id.
-			</p>
-		</div><!-- text box-->
-	</div> <!-- review container -->
 
-</div> <!-- main container -->
+		<!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+
+		</div> <!-- slideshow container -->
+		<br>
+
+		<!--<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span>
+		  <span class="dot" onclick="currentSlide(2)"></span>
+		  <span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+			<span class="dot" onclick="currentSlide(5)"></span>
+		</div> -->
+
+		<script>
+			w3.slideshow(".mySlides", 3000);
+		</script>	
+
+		<script src="js/slideshow.js"></script>
+
+	
+<footer> 
+	© 2019, Anirudh Venkataramanan and Robin Kim
+</footer>
 
 </body>
 </html>
